@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colourful Pages</title>
+    <style>
+        /* Initial styles for flex container and items */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh; /* Full screen height */
+        }
+
+        .flex-item {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="item1">Item 1</div>
+        <div class="flex-item" id="item2">Item 2</div>
+        <div class="flex-item" id="item3">Item 3</div>
+    </div>
+
+    <script>
+        // Selecting the flex container and items
+        let flexContainer = document.querySelector('.flex-container');
+        let item1 = document.querySelector('#item1');
+        let item2 = document.querySelector('#item2');
+        let item3 = document.querySelector('#item3');
+
+        // Programmatically setting styles for the flex container
+        flexContainer.style.backgroundColor = '#f0f8ff'; // Light blue
+        flexContainer.style.border = '5px solid black';
+        flexContainer.style.padding = '20px';
+
+        // Styles for flex items
+        item1.style.backgroundColor = '#ff5733'; // A Vibrant orange Color
+        item1.style.border = '3px dashed white';
+        item1.style.borderRadius = '10px';
+
+        item2.style.backgroundColor = '#33ff57'; // A Bright green Color
+        item2.style.border = '3px solid white';
+        item2.style.borderRadius = '20px';
+
+        item3.style.backgroundColor = '#3357ff'; // The Deep blue Color
+        item3.style.border = '3px dotted white';
+        item3.style.borderRadius = '30px';
+    </script>
+</body>
+</html>
